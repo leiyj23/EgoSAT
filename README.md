@@ -134,7 +134,7 @@ To evaluate a new model on EgoSAT, implement a model adapter that connects the m
 
 An adapter should load video prefixes available before each query time, receive task-specific prompts and querysets, return structured answers, and optionally expose MCQ confidence scores for confidence diagnostics.
 
-### Evaluation
+## <img src="assets/evaluation.png" width="30" height="30" alt=""> &nbsp; ### Evaluation
 
 Run inference with the provided scripts. A minimal MCQ example is:
 
