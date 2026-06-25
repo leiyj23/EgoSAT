@@ -97,7 +97,7 @@ Raw Ego4D videos are not included. Users must obtain Ego4D access separately and
 
 ### Data Preparation
 
-Download the EgoSAT annotations, MCQ candidates, effective querysets, and SFT manifests from the Hugging Face dataset release once the dataset link is available. ROI cache files, when needed, should be obtained from the separate ROI cache release.
+Download the EgoSAT annotations, MCQ candidates, effective querysets, and SFT manifests from the Hugging Face dataset release. ROI cache files, when needed, should be obtained from the separate ROI cache release.
 
 Raw Ego4D videos are not redistributed with EgoSAT. Users must obtain Ego4D access and the corresponding license separately, then organize the videos under a local private root.
 
@@ -190,4 +190,4 @@ If you find EgoSAT useful for your research, please cite:
 
 ## <img src="assets/license.png" width="30" height="30" alt=""> &nbsp; License
 
-Code in this repository is released under the MIT License. Raw Ego4D videos are not redistributed and are governed by the Ego4D license. Dataset license and usage terms should be checked in the Hugging Face Dataset Card once the dataset release is public.
+Code in this repository is released under the MIT License. Raw Ego4D videos are not redistributed and are governed by the Ego4D license. Dataset license and usage terms should be checked in the Hugging Face Dataset Card.
