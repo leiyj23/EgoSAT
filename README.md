@@ -11,14 +11,15 @@
 <p align="center">
   <a href="https://leiyj23.github.io/EgoSAT/">Project Page</a> |
   <a href="https://arxiv.org/abs/2606.24422">arXiv Paper</a> |
-  <span>Dataset coming soon</span>
+  <a href="https://huggingface.co/datasets/YijiaLeithu/EgoSAT">Dataset</a> |
+  <a href="https://huggingface.co/datasets/YijiaLeithu/EgoSAT-ROI-Cache">ROI Cache</a>
 </p>
 
 <p align="center">
   <strong>EgoSAT is accepted to ECCV 2026.</strong>
 </p>
 
-## Introduction
+## <img src="assets/introduction.png" width="30" height="30" alt=""> &nbsp; Introduction
 
 Recent advances in wearable cameras, edge computing, and vision-language models are making first-person AI assistants increasingly practical. In real deployments, such assistants must continuously understand streaming video, respond to the user's current environment, remember relevant past events, and anticipate plausible future interactions.
 
@@ -32,7 +33,7 @@ Existing benchmarks often evaluate video question answering, online narration, a
 
 **Retrospective modeling.** The model answers questions about past events by locating the relevant moment in the observed streaming history.
 
-## Dataset
+## <img src="assets/dataset.png" width="30" height="30" alt=""> &nbsp; Dataset
 
 ### Dataset Statistics
 
@@ -166,7 +167,7 @@ The official scorer uses raw per-sample prediction JSON files produced by the ru
 
 See [docs/inference.md](docs/inference.md) and [evaluation/README.md](evaluation/README.md) for model-specific inference details, prediction layout, confidence inputs, and metric definitions. SFT manifests are documented in [training/README.md](training/README.md).
 
-## Experimental Results
+## <img src="assets/experiment_result.png" width="30" height="30" alt=""> &nbsp; Experimental Results
 
 ### Performance of closed-source proprietary models, offline open-weight VLMs, and streaming VLMs on EgoSAT
 
@@ -174,7 +175,7 @@ See [docs/inference.md](docs/inference.md) and [evaluation/README.md](evaluation
   <img src="assets/main_table.png" width="100%">
 </p>
 
-## Citation
+## <img src="assets/citation.png" width="30" height="30" alt=""> &nbsp; Citation
 
 If you find EgoSAT useful for your research, please cite:
 
@@ -187,6 +188,6 @@ If you find EgoSAT useful for your research, please cite:
 }
 ```
 
-## License
+## <img src="assets/license.png" width="30" height="30" alt=""> &nbsp; License
 
 Code in this repository is released under the MIT License. Raw Ego4D videos are not redistributed and are governed by the Ego4D license. Dataset license and usage terms should be checked in the Hugging Face Dataset Card once the dataset release is public.
