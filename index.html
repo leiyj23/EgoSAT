@@ -1,12 +1,447 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>EgoSAT</title>
-  <meta http-equiv="refresh" content="0; url=https://github.com/leiyj23/EgoSAT">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>EgoSAT: Egocentric Streaming Interaction Understanding</title>
+  <meta name="description" content="EgoSAT is a comprehensive benchmark for egocentric streaming interaction understanding, evaluating retrospective, present, and prospective reasoning under streaming observations.">
+
+  <style>
+    :root {
+      --text: #1f2933;
+      --muted: #52606d;
+      --line: #e5e7eb;
+      --bg: #ffffff;
+      --soft: #f7f9fb;
+      --link: #2563eb;
+      --link-dark: #1d4ed8;
+      --accent: #111827;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: var(--text);
+      background: var(--bg);
+      line-height: 1.65;
+    }
+
+    .container {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 42px 24px 72px;
+    }
+
+    .hero {
+      text-align: center;
+      margin-bottom: 44px;
+    }
+
+    .hero h1 {
+      margin: 0 auto 14px;
+      max-width: 980px;
+      font-size: 42px;
+      line-height: 1.15;
+      letter-spacing: -0.035em;
+      color: var(--accent);
+    }
+
+    .subtitle {
+      margin: 0 auto 20px;
+      max-width: 850px;
+      font-size: 19px;
+      color: var(--muted);
+    }
+
+    .links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      margin: 20px 0 20px;
+    }
+
+    .links a,
+    .links span {
+      display: inline-block;
+      padding: 8px 14px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      text-decoration: none;
+      color: var(--link);
+      background: #fff;
+      font-weight: 600;
+      font-size: 15px;
+    }
+
+    .links a:hover {
+      color: #fff;
+      background: var(--link);
+      border-color: var(--link);
+    }
+
+    .links span {
+      color: var(--muted);
+      background: var(--soft);
+    }
+
+    .accepted {
+      margin: 12px 0 28px;
+      font-weight: 700;
+      color: #111827;
+    }
+
+    .teaser {
+      width: 100%;
+      max-width: 1040px;
+      margin: 26px auto 0;
+      border-radius: 12px;
+      border: 1px solid var(--line);
+      box-shadow: 0 10px 35px rgba(15, 23, 42, 0.08);
+      background: #fff;
+    }
+
+    section {
+      margin-top: 52px;
+    }
+
+    h2 {
+      margin: 0 0 18px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid var(--line);
+      font-size: 29px;
+      letter-spacing: -0.025em;
+      color: var(--accent);
+    }
+
+    h3 {
+      margin: 28px 0 12px;
+      font-size: 21px;
+      color: var(--accent);
+    }
+
+    p {
+      margin: 0 0 14px;
+    }
+
+    ul {
+      margin-top: 8px;
+      padding-left: 24px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      margin-top: 18px;
+    }
+
+    .card {
+      padding: 18px;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      background: var(--soft);
+    }
+
+    .card h3 {
+      margin: 0 0 8px;
+      font-size: 18px;
+    }
+
+    .card p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 12px;
+      margin: 20px 0 24px;
+    }
+
+    .stat {
+      padding: 16px 12px;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      background: #fff;
+      text-align: center;
+    }
+
+    .stat strong {
+      display: block;
+      font-size: 22px;
+      color: var(--accent);
+      line-height: 1.25;
+    }
+
+    .stat span {
+      display: block;
+      margin-top: 4px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .figure {
+      width: 100%;
+      margin: 22px auto;
+      border-radius: 12px;
+      border: 1px solid var(--line);
+      background: #fff;
+    }
+
+    .main-table {
+      width: 100%;
+      margin: 22px auto;
+      border-radius: 12px;
+      border: 1px solid var(--line);
+      background: #fff;
+    }
+
+    pre {
+      overflow-x: auto;
+      padding: 18px;
+      border-radius: 12px;
+      background: #0f172a;
+      color: #e5e7eb;
+      font-size: 14px;
+      line-height: 1.5;
+    }
+
+    code {
+      font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    }
+
+    .note {
+      padding: 14px 16px;
+      border-left: 4px solid var(--link);
+      border-radius: 10px;
+      background: #eff6ff;
+      color: #1e3a8a;
+      margin: 18px 0;
+    }
+
+    footer {
+      margin-top: 56px;
+      padding-top: 24px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      text-align: center;
+      font-size: 14px;
+    }
+
+    @media (max-width: 820px) {
+      .hero h1 {
+        font-size: 32px;
+      }
+
+      .subtitle {
+        font-size: 17px;
+      }
+
+      .cards {
+        grid-template-columns: 1fr;
+      }
+
+      .stats {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  </style>
+
 </head>
+
 <body>
-  <p>Redirecting to the EgoSAT GitHub repository...</p>
-  <p><a href="https://github.com/leiyj23/EgoSAT">Click here if you are not redirected.</a></p>
+  <main class="container">
+    <header class="hero">
+      <h1>EgoSAT: A Comprehensive Benchmark of Egocentric Streaming Interaction Understanding</h1>
+
+```
+  <p class="subtitle">
+    A benchmark for evaluating retrospective, present, and prospective reasoning in egocentric streaming video understanding.
+  </p>
+
+  <div class="links">
+    <a href="https://github.com/leiyj23/EgoSAT">GitHub</a>
+    <a href="https://arxiv.org/abs/2606.24422">arXiv Paper</a>
+    <span>Dataset coming soon</span>
+  </div>
+
+  <p class="accepted">EgoSAT is accepted to ECCV 2026.</p>
+
+  <img class="teaser" src="assets/teaser.png" alt="EgoSAT teaser figure">
+</header>
+
+<section id="introduction">
+  <h2>Introduction</h2>
+
+  <p>
+    Recent advances in wearable cameras, edge computing, and vision-language models are enabling AI assistants that can continuously observe the world from a first-person perspective and respond to users in natural language. However, existing benchmarks usually evaluate video question answering, online narration, and activity anticipation as separate tasks, while real egocentric assistants must reason about past events, ongoing interactions, and plausible future outcomes within the same evolving video stream.
+  </p>
+
+  <p>
+    EgoSAT bridges this gap with a unified benchmark for egocentric streaming interaction understanding. Models must answer queries under a strict online constraint: only frames observed before the query time are available. Beyond answer accuracy, EgoSAT also evaluates interaction awareness, answerability, and confidence calibration under streaming uncertainty.
+  </p>
+
+  <h3>Three distinct reasoning modes</h3>
+
+  <div class="cards">
+    <div class="card">
+      <h3>Present modeling</h3>
+      <p>The model answers questions about the current observation and must recognize whether a visible human-object interaction is happening right now.</p>
+    </div>
+
+    <div class="card">
+      <h3>Prospective modeling</h3>
+      <p>The model predicts future interactions from the observed visual prefix while judging whether the future is actually predictable from available evidence.</p>
+    </div>
+
+    <div class="card">
+      <h3>Retrospective modeling</h3>
+      <p>The model answers questions about past events by retrieving the relevant moment from the observed streaming history.</p>
+    </div>
+  </div>
+</section>
+
+<section id="dataset">
+  <h2>Dataset</h2>
+
+  <h3>Dataset Statistics</h3>
+
+  <div class="stats">
+    <div class="stat">
+      <strong>1,997</strong>
+      <span>egocentric videos</span>
+    </div>
+
+    <div class="stat">
+      <strong>165h</strong>
+      <span>egocentric footage</span>
+    </div>
+
+    <div class="stat">
+      <strong>296.8s</strong>
+      <span>average duration</span>
+    </div>
+
+    <div class="stat">
+      <strong>56</strong>
+      <span>diverse scenarios</span>
+    </div>
+
+    <div class="stat">
+      <strong>4.8K</strong>
+      <span>QA pairs</span>
+    </div>
+  </div>
+
+  <img class="figure" src="assets/answerability_scenario.png" alt="EgoSAT answerability construction and scenario distribution">
+
+  <h3>Answerability-aware Construction</h3>
+
+  <p>
+    <strong>Branchiness.</strong> Branchiness measures uncertainty caused by multiple plausible and semantically diverse future continuations after the same observed interaction prefix.
+  </p>
+
+  <p>
+    <strong>Surprise.</strong> Surprise measures uncertainty caused by abrupt visual and semantic shifts between the recent observed context and the imminent future event.
+  </p>
+</section>
+
+<section id="pipeline">
+  <h2>Evaluation Pipeline</h2>
+
+  <h3>Data Preparation</h3>
+
+  <p>
+    EgoSAT releases annotations, MCQ candidates, effective querysets, and SFT manifests. Raw Ego4D videos are not redistributed. Users must obtain Ego4D access separately and set a local video root before running video inference.
+  </p>
+
+  <pre><code>EgoSAT-data/
+```
+
+egosat/
+gt/
+mcq_shuffled/
+effective_querysets/
+metadata/
+sft/
+
+EgoSAT-ROI-Cache/
+roi_cache/
+metadata/
+
+Ego4D/
+videos/</code></pre>
+
+```
+  <h3>Model Preparation</h3>
+
+  <p>
+    To evaluate a custom model, implement an EgoSAT model adapter that connects your model to the runner/helper pipeline. See the repository documentation for details.
+  </p>
+
+  <div class="links" style="justify-content: flex-start;">
+    <a href="https://github.com/leiyj23/EgoSAT/blob/main/docs/model_guide.md">Model Adapter Guide</a>
+  </div>
+
+  <h3>Evaluation</h3>
+
+  <p>
+    The official scorer uses raw per-sample prediction JSON files and the released effective querysets. Normalized JSONL files are provided only for convenience and are not the official scoring source.
+  </p>
+
+  <pre><code>python evaluation/evaluate_main_table.py \
+```
+
+--pred-root /path/to/predictions 
+--gt-root /path/to/EgoSAT-data/egosat/gt 
+--mcq-root /path/to/EgoSAT-data/egosat/mcq_shuffled 
+--effective-queryset-root /path/to/EgoSAT-data/egosat/effective_querysets</code></pre> </section>
+
+```
+<section id="results">
+  <h2>Experimental Results</h2>
+
+  <h3>Performance of closed-source proprietary models, offline open-weight VLMs, and streaming VLMs on EgoSAT</h3>
+
+  <img class="main-table" src="assets/main_table.png" alt="EgoSAT main results table">
+</section>
+
+<section id="citation">
+  <h2>Citation</h2>
+
+  <p>If you find EgoSAT useful for your research, please cite:</p>
+
+  <pre><code>@inproceedings{lei2026egosat,
+```
+
+title={EgoSAT: A Comprehensive Benchmark of Egocentric Streaming Interaction Understanding},
+author={Lei, Yijia and Li, Jinzhao and Zhang, Yichi and Hua, Jiacheng and Li, Yin and Liu, Miao},
+booktitle={European Conference on Computer Vision},
+year={2026}
+}</code></pre> </section>
+
+```
+<section id="license">
+  <h2>License</h2>
+
+  <p>
+    The code is released under the MIT License. Raw Ego4D videos are not redistributed and are governed by the Ego4D license. Dataset usage terms will be provided with the Hugging Face release.
+  </p>
+</section>
+
+<footer>
+  EgoSAT: Egocentric Streaming Interaction Understanding Benchmark
+</footer>
+```
+
+  </main>
 </body>
 </html>
