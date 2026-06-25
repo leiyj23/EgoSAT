@@ -55,7 +55,7 @@ EgoSAT is built from Ego4D and contains:
 
 **Surprise.** Surprise captures uncertainty from abrupt visual and semantic shifts between the recent observed context and the imminent future event.
 
-## Evaluation Pipeline
+## <img src="assets/evaluation.png" width="30" height="30" alt=""> &nbsp; Evaluation Pipeline
 
 ### Requirements
 
@@ -134,7 +134,7 @@ To evaluate a new model on EgoSAT, implement a model adapter that connects the m
 
 An adapter should load video prefixes available before each query time, receive task-specific prompts and querysets, return structured answers, and optionally expose MCQ confidence scores for confidence diagnostics.
 
-## <img src="assets/evaluation.png" width="30" height="30" alt=""> &nbsp; ### Evaluation
+### Evaluation
 
 Run inference with the provided scripts. A minimal MCQ example is:
 
