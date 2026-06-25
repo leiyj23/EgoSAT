@@ -1,0 +1,52 @@
+qwen2_5_vl_7b:
+  type: local
+  adapter: benchmark_val/llms/qwen2_5_vl_7b_adapter.py
+  default_model_id: Qwen/Qwen2.5-VL-7B-Instruct
+  default_num_frames: 16
+  default_torch_dtype: bfloat16
+  notes: "Requires transformers, qwen-vl-utils, decord, and a local GPU."
+
+qwen2_5_vl_32b:
+  type: local
+  adapter: benchmark_val/llms/qwen2_5_vl_32b_adapter.py
+  default_model_id: Qwen/Qwen2.5-VL-32B-Instruct
+  default_num_frames: 16
+  default_torch_dtype: bfloat16
+  notes: "Can also be adapted to larger Qwen checkpoints by overriding --model-id."
+
+gemini_pro:
+  type: api
+  adapter: benchmark_val/llms/llm_adapter.py
+  provider: openrouter
+  required_env:
+    - OPENROUTER_API_KEY
+  default_openrouter_model: google/gemini-2.5-pro
+  notes: "Requires an OpenRouter API key. API costs may apply."
+
+# Optional adapter entry for future documentation only; wrappers do not officially support it yet.
+# claude_sonnet:
+#   type: api
+#   adapter: benchmark_val/llms/llm_adapter.py
+#   provider: openrouter
+#   required_env:
+#     - OPENROUTER_API_KEY
+#   default_openrouter_model: anthropic/claude-sonnet-4
+
+timechat_online_7b_full_sft:
+  type: local
+  adapter: benchmark_val/llms/timechat_online_7b_adapter.py
+  default_model_id: wyccccc/TimeChatOnline-7B
+  required_env:
+    - TIMECHAT_REPO_ROOT
+    - TIMECHAT_FT_DIR
+  notes: "Set TIMECHAT_FT_DIR to a full SFT LoRA adapter directory. Public shell wrappers are not fully wired for this entry yet."
+
+roi_timechat_online_7b_full_sft:
+  type: local
+  adapter: benchmark_val/llms/roi_timechat_online_7b_adapter.py
+  default_model_id: wyccccc/TimeChatOnline-7B
+  required_env:
+    - TIMECHAT_REPO_ROOT
+    - TIMECHAT_FT_DIR
+    - ROI_CACHE_ROOT
+  notes: "Requires full ROI cache hosted separately. Public shell wrappers are not fully wired for this entry yet."

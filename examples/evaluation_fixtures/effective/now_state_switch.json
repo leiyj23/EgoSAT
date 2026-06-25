@@ -1,0 +1,10 @@
+{
+  "task": "now_state_switch",
+  "samples": [
+    {"idx": 0, "region": "segment", "state_switch_pair_type": "segment_to_gap", "state_switch_role": "fixed_segment_mid", "state_switch_pair_id": "fgbg_0"},
+    {"idx": 1, "region": "gap", "state_switch_pair_type": "segment_to_gap", "state_switch_role": "scan_gap", "state_switch_pair_id": "fgbg_0"},
+    {"idx": 2, "region": "gap", "state_switch_pair_type": "gap_to_segment", "state_switch_role": "fixed_gap_mid", "state_switch_pair_id": "bgfg_0"},
+    {"idx": 3, "region": "segment", "state_switch_pair_type": "gap_to_segment", "state_switch_role": "scan_segment", "state_switch_pair_id": "bgfg_0"}
+  ]
+}
+

@@ -1,0 +1,9 @@
+{
+  "source_queryset": "examples/evaluation_fixtures/effective/sh_pred.json",
+  "samples": [
+    {"idx": 0, "response_text": "A", "clean_response": "A", "parsed": {"ans": "A"}, "diagnostics": {"prompt_and_encoding_debug": {"cand_conf_probe": {"ok": true, "p_cond": {"A": 0.8, "B": 0.1, "C": 0.05, "D": 0.05}}}}},
+    {"idx": 1, "response_text": "C", "clean_response": "C", "parsed": {"ans": "C"}, "diagnostics": {"prompt_and_encoding_debug": {"cand_conf_probe": {"ok": true, "p_cond": {"A": 0.2, "B": 0.3, "C": 0.4, "D": 0.1}}}}},
+    {"idx": 3, "response_text": "D", "clean_response": "D", "parsed": {"ans": "D"}, "diagnostics": {"prompt_and_encoding_debug": {"cand_conf_probe": {"ok": true, "p_cond": {"A": 0.02, "B": 0.03, "C": 0.05, "D": 0.9}}}}}
+  ]
+}
+

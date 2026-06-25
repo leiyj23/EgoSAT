@@ -1,0 +1,34 @@
+{
+  "samples": {
+    "samples_total": 4,
+    "valid_predictions": 4,
+    "invalid_or_missing_predictions": 0,
+    "unknown_gt": 0
+  },
+  "switch": {
+    "FG_to_BG": {
+      "pair_type": "segment_to_gap",
+      "pairs_total_seen": 1,
+      "pairs_missing_required_roles": 0,
+      "pairs_invalid_due_to_invalid_probe": 0,
+      "pairs_valid": 1,
+      "pairs_success_both_probes_correct": 1,
+      "success_rate_over_valid_pairs": 1.0,
+      "success_rate_over_total_pairs": 1.0,
+      "after_transition_conf_mean_over_success": 0.72,
+      "after_transition_conf_count_over_success": 1
+    },
+    "BG_to_FG": {
+      "pair_type": "gap_to_segment",
+      "pairs_total_seen": 1,
+      "pairs_missing_required_roles": 0,
+      "pairs_invalid_due_to_invalid_probe": 0,
+      "pairs_valid": 1,
+      "pairs_success_both_probes_correct": 0,
+      "success_rate_over_valid_pairs": 0.0,
+      "success_rate_over_total_pairs": 0.0,
+      "after_transition_conf_mean_over_success": null,
+      "after_transition_conf_count_over_success": 0
+    }
+  }
+}

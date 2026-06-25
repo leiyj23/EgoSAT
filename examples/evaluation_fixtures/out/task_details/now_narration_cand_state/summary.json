@@ -1,0 +1,16 @@
+{
+  "rec": 0.5,
+  "prec": 0.5,
+  "state_accuracy_full": 0.3333333333333333,
+  "counts": {
+    "samples_total": 3,
+    "valid_predictions": 2,
+    "invalid_or_missing_predictions": 1,
+    "tp": 1,
+    "fp": 1,
+    "fn": 1,
+    "tn": 0,
+    "state_correct_full": 1,
+    "unknown_gt": 0
+  }
+}

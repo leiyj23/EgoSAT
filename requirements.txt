@@ -1,0 +1,6 @@
+# Core dependencies for EgoSAT runner, helper, lightweight adapters, and evaluation.
+# Model-specific adapters may require additional packages such as torch,
+# transformers, qwen-vl-utils, decord, or external model repositories.
+
+requests>=2.28
+tqdm>=4.64

@@ -1,0 +1,13 @@
+# Full dependencies for EgoSAT training/SFT workflows.
+# This includes requirements.txt and adds common training dependencies.
+# External model repositories and CUDA-specific PyTorch wheels are not pinned here.
+
+-r requirements.txt
+
+PyYAML>=6.0
+torch
+transformers
+accelerate
+peft
+Pillow
+decord

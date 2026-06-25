@@ -1,0 +1,8 @@
+{
+  "source_queryset": "examples/evaluation_fixtures/effective/now_narration_cand_mcq.json",
+  "samples": [
+    {"idx": 0, "response_text": "<NOW><ANS>A</ANS></NOW>", "clean_response": "<NOW><ANS>A</ANS></NOW>", "parsed": {"ans": "A"}},
+    {"idx": 1, "response_text": "<NOW><ANS>C</ANS></NOW>", "clean_response": "<NOW><ANS>C</ANS></NOW>", "parsed": {"ans": "C"}}
+  ]
+}
+

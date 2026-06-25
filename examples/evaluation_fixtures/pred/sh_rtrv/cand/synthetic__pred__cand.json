@@ -1,0 +1,8 @@
+{
+  "source_queryset": "examples/evaluation_fixtures/effective/sh_rtrv.json",
+  "samples": [
+    {"idx": 0, "response_text": "<PAST><ANS>A</ANS></PAST>", "clean_response": "<PAST><ANS>A</ANS></PAST>", "parsed": {"ans": "A"}},
+    {"idx": 1, "response_text": "<PAST><ANS>C</ANS></PAST>", "clean_response": "<PAST><ANS>C</ANS></PAST>", "parsed": {"ans": "C"}}
+  ]
+}
+

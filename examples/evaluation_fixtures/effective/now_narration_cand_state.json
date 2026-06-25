@@ -1,0 +1,9 @@
+{
+  "task": "now_narration",
+  "samples": [
+    {"idx": 0, "region": "segment"},
+    {"idx": 1, "region": "gap"},
+    {"idx": 2, "region": "segment"}
+  ]
+}
+

@@ -1,0 +1,8 @@
+{
+  "task": "now_narration",
+  "samples": [
+    {"idx": 0, "mcq": {"answer": "A", "answer_idx": 0, "options": ["take cup", "open door", "cut bread", "wipe table"]}},
+    {"idx": 1, "mcq": {"answer": "B", "answer_idx": 1, "options": ["take cup", "open door", "cut bread", "wipe table"]}}
+  ]
+}
+

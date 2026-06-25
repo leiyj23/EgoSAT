@@ -1,0 +1,425 @@
+{
+  "model": "synthetic_model",
+  "split": "val",
+  "pred_root": "examples\\evaluation_fixtures\\pred",
+  "created_at_unix": 1782305775.590463,
+  "metrics": {
+    "now_narration": {
+      "rec": 0.5,
+      "prec": 0.5,
+      "mcq_acc": 0.5,
+      "state_accuracy_full": 0.3333333333333333,
+      "counts": {
+        "state": {
+          "samples_total": 3,
+          "valid_predictions": 2,
+          "invalid_or_missing_predictions": 1,
+          "tp": 1,
+          "fp": 1,
+          "fn": 1,
+          "tn": 0,
+          "state_correct_full": 1,
+          "unknown_gt": 0
+        },
+        "mcq": {
+          "samples_total": 2,
+          "samples_valid": 2,
+          "samples_invalid": 0,
+          "correct": 1,
+          "accuracy_over_total": 0.5,
+          "accuracy_over_valid": 0.5
+        }
+      }
+    },
+    "now_state_switch": {
+      "ss_pos_1": {
+        "pos": "t:1.0",
+        "pred_dir": "examples\\evaluation_fixtures\\pred\\now_state_switch\\cand_state\\sspos_t_1_0",
+        "fg_to_bg_acc": 1.0,
+        "bg_to_fg_acc": 0.0,
+        "fg_to_bg_conf_success_after_mean": 0.71,
+        "bg_to_fg_conf_success_after_mean": null,
+        "counts": {
+          "samples": {
+            "samples_total": 4,
+            "valid_predictions": 4,
+            "invalid_or_missing_predictions": 0,
+            "unknown_gt": 0
+          },
+          "FG_to_BG": {
+            "pair_type": "segment_to_gap",
+            "pairs_total_seen": 1,
+            "pairs_missing_required_roles": 0,
+            "pairs_invalid_due_to_invalid_probe": 0,
+            "pairs_valid": 1,
+            "pairs_success_both_probes_correct": 1,
+            "success_rate_over_valid_pairs": 1.0,
+            "success_rate_over_total_pairs": 1.0,
+            "after_transition_conf_mean_over_success": 0.71,
+            "after_transition_conf_count_over_success": 1
+          },
+          "BG_to_FG": {
+            "pair_type": "gap_to_segment",
+            "pairs_total_seen": 1,
+            "pairs_missing_required_roles": 0,
+            "pairs_invalid_due_to_invalid_probe": 0,
+            "pairs_valid": 1,
+            "pairs_success_both_probes_correct": 0,
+            "success_rate_over_valid_pairs": 0.0,
+            "success_rate_over_total_pairs": 0.0,
+            "after_transition_conf_mean_over_success": null,
+            "after_transition_conf_count_over_success": 0
+          }
+        }
+      },
+      "ss_pos_2": {
+        "pos": "t:2.0",
+        "pred_dir": "examples\\evaluation_fixtures\\pred\\now_state_switch\\cand_state\\sspos_t_2_0",
+        "fg_to_bg_acc": 1.0,
+        "bg_to_fg_acc": 0.0,
+        "fg_to_bg_conf_success_after_mean": 0.72,
+        "bg_to_fg_conf_success_after_mean": null,
+        "counts": {
+          "samples": {
+            "samples_total": 4,
+            "valid_predictions": 4,
+            "invalid_or_missing_predictions": 0,
+            "unknown_gt": 0
+          },
+          "FG_to_BG": {
+            "pair_type": "segment_to_gap",
+            "pairs_total_seen": 1,
+            "pairs_missing_required_roles": 0,
+            "pairs_invalid_due_to_invalid_probe": 0,
+            "pairs_valid": 1,
+            "pairs_success_both_probes_correct": 1,
+            "success_rate_over_valid_pairs": 1.0,
+            "success_rate_over_total_pairs": 1.0,
+            "after_transition_conf_mean_over_success": 0.72,
+            "after_transition_conf_count_over_success": 1
+          },
+          "BG_to_FG": {
+            "pair_type": "gap_to_segment",
+            "pairs_total_seen": 1,
+            "pairs_missing_required_roles": 0,
+            "pairs_invalid_due_to_invalid_probe": 0,
+            "pairs_valid": 1,
+            "pairs_success_both_probes_correct": 0,
+            "success_rate_over_valid_pairs": 0.0,
+            "success_rate_over_total_pairs": 0.0,
+            "after_transition_conf_mean_over_success": null,
+            "after_transition_conf_count_over_success": 0
+          }
+        }
+      },
+      "ss_pos_3": {
+        "pos": "t:4.0",
+        "pred_dir": "examples\\evaluation_fixtures\\pred\\now_state_switch\\cand_state\\sspos_t_4_0",
+        "fg_to_bg_acc": 1.0,
+        "bg_to_fg_acc": 0.0,
+        "fg_to_bg_conf_success_after_mean": 0.73,
+        "bg_to_fg_conf_success_after_mean": null,
+        "counts": {
+          "samples": {
+            "samples_total": 4,
+            "valid_predictions": 4,
+            "invalid_or_missing_predictions": 0,
+            "unknown_gt": 0
+          },
+          "FG_to_BG": {
+            "pair_type": "segment_to_gap",
+            "pairs_total_seen": 1,
+            "pairs_missing_required_roles": 0,
+            "pairs_invalid_due_to_invalid_probe": 0,
+            "pairs_valid": 1,
+            "pairs_success_both_probes_correct": 1,
+            "success_rate_over_valid_pairs": 1.0,
+            "success_rate_over_total_pairs": 1.0,
+            "after_transition_conf_mean_over_success": 0.73,
+            "after_transition_conf_count_over_success": 1
+          },
+          "BG_to_FG": {
+            "pair_type": "gap_to_segment",
+            "pairs_total_seen": 1,
+            "pairs_missing_required_roles": 0,
+            "pairs_invalid_due_to_invalid_probe": 0,
+            "pairs_valid": 1,
+            "pairs_success_both_probes_correct": 0,
+            "success_rate_over_valid_pairs": 0.0,
+            "success_rate_over_total_pairs": 0.0,
+            "after_transition_conf_mean_over_success": null,
+            "after_transition_conf_count_over_success": 0
+          }
+        }
+      }
+    },
+    "sh_pred": {
+      "counts": {
+        "accuracy": {
+          "buckets": {
+            "predictable": {
+              "samples_total": 1,
+              "samples_valid": 1,
+              "samples_invalid": 0,
+              "correct": 1,
+              "accuracy_over_total": 1.0,
+              "accuracy_over_valid": 1.0
+            },
+            "branch_only": {
+              "samples_total": 1,
+              "samples_valid": 1,
+              "samples_invalid": 0,
+              "correct": 0,
+              "accuracy_over_total": 0.0,
+              "accuracy_over_valid": 0.0
+            },
+            "surprise_only": {
+              "samples_total": 1,
+              "samples_valid": 0,
+              "samples_invalid": 1,
+              "correct": 0,
+              "accuracy_over_total": 0.0,
+              "accuracy_over_valid": null
+            },
+            "branch_and_surprise": {
+              "samples_total": 1,
+              "samples_valid": 1,
+              "samples_invalid": 0,
+              "correct": 1,
+              "accuracy_over_total": 1.0,
+              "accuracy_over_valid": 1.0
+            }
+          },
+          "all": {
+            "samples_total": 4,
+            "samples_valid": 3,
+            "samples_invalid": 1,
+            "correct": 2,
+            "accuracy_over_total": 0.5,
+            "accuracy_over_valid": 0.6666666666666666
+          }
+        },
+        "confidence": {
+          "buckets": {
+            "predictable": {
+              "samples_total": 1,
+              "conf_count_over_valid": 1,
+              "conf_mean_over_valid": 0.8,
+              "conf_sources": {
+                "cand_conf_p_cond_pred": 1
+              }
+            },
+            "branch_only": {
+              "samples_total": 1,
+              "conf_count_over_valid": 1,
+              "conf_mean_over_valid": 0.4,
+              "conf_sources": {
+                "cand_conf_p_cond_pred": 1
+              }
+            },
+            "surprise_only": {
+              "samples_total": 1,
+              "conf_count_over_valid": 0,
+              "conf_mean_over_valid": null,
+              "conf_sources": {
+                "missing_prediction": 1
+              }
+            },
+            "branch_and_surprise": {
+              "samples_total": 1,
+              "conf_count_over_valid": 1,
+              "conf_mean_over_valid": 0.9,
+              "conf_sources": {
+                "cand_conf_p_cond_pred": 1
+              }
+            }
+          }
+        }
+      },
+      "predictable_acc": 1.0,
+      "predictable_conf": 0.8,
+      "branch_only_acc": 0.0,
+      "branch_only_conf": 0.4,
+      "surprise_only_acc": 0.0,
+      "surprise_only_conf": null,
+      "branch_and_surprise_acc": 1.0,
+      "branch_and_surprise_conf": 0.9
+    },
+    "ms_pred": {
+      "counts": {
+        "accuracy": {
+          "buckets": {
+            "step_0": {
+              "samples_total": 1,
+              "samples_valid": 1,
+              "samples_invalid": 0,
+              "correct": 1,
+              "accuracy_over_total": 1.0,
+              "accuracy_over_valid": 1.0
+            },
+            "step_1": {
+              "samples_total": 1,
+              "samples_valid": 1,
+              "samples_invalid": 0,
+              "correct": 0,
+              "accuracy_over_total": 0.0,
+              "accuracy_over_valid": 0.0
+            },
+            "step_2": {
+              "samples_total": 1,
+              "samples_valid": 0,
+              "samples_invalid": 1,
+              "correct": 0,
+              "accuracy_over_total": 0.0,
+              "accuracy_over_valid": null
+            }
+          },
+          "all": {
+            "samples_total": 3,
+            "samples_valid": 2,
+            "samples_invalid": 1,
+            "correct": 1,
+            "accuracy_over_total": 0.3333333333333333,
+            "accuracy_over_valid": 0.5
+          }
+        },
+        "confidence": {
+          "buckets": {
+            "step_0": {
+              "samples_total": 1,
+              "conf_count_over_valid": 1,
+              "conf_mean_over_valid": 0.75,
+              "conf_sources": {
+                "cand_conf_p_cond_pred": 1
+              }
+            },
+            "step_1": {
+              "samples_total": 1,
+              "conf_count_over_valid": 1,
+              "conf_mean_over_valid": 0.6,
+              "conf_sources": {
+                "cand_conf_p_cond_pred": 1
+              }
+            },
+            "step_2": {
+              "samples_total": 1,
+              "conf_count_over_valid": 1,
+              "conf_mean_over_valid": 0.2,
+              "conf_sources": {
+                "cand_conf_p_cond_pred": 1
+              }
+            }
+          }
+        }
+      },
+      "step_0_acc": 1.0,
+      "step_0_conf": 0.75,
+      "step_1_acc": 0.0,
+      "step_1_conf": 0.6,
+      "step_2_acc": 0.0,
+      "step_2_conf": 0.2,
+      "multi_avg_acc": 0.3333333333333333,
+      "multi_avg_conf": 0.5166666666666667
+    },
+    "ms_rtrv": {
+      "counts": {
+        "accuracy": {
+          "buckets": {
+            "step_0": {
+              "samples_total": 1,
+              "samples_valid": 1,
+              "samples_invalid": 0,
+              "correct": 0,
+              "accuracy_over_total": 0.0,
+              "accuracy_over_valid": 0.0
+            },
+            "step_1": {
+              "samples_total": 1,
+              "samples_valid": 1,
+              "samples_invalid": 0,
+              "correct": 1,
+              "accuracy_over_total": 1.0,
+              "accuracy_over_valid": 1.0
+            },
+            "step_2": {
+              "samples_total": 1,
+              "samples_valid": 1,
+              "samples_invalid": 0,
+              "correct": 1,
+              "accuracy_over_total": 1.0,
+              "accuracy_over_valid": 1.0
+            }
+          },
+          "all": {
+            "samples_total": 3,
+            "samples_valid": 3,
+            "samples_invalid": 0,
+            "correct": 2,
+            "accuracy_over_total": 0.6666666666666666,
+            "accuracy_over_valid": 0.6666666666666666
+          }
+        },
+        "confidence": {
+          "buckets": {
+            "step_0": {
+              "samples_total": 1,
+              "conf_count_over_valid": 1,
+              "conf_mean_over_valid": 0.6,
+              "conf_sources": {
+                "cand_conf_p_cond_pred": 1
+              }
+            },
+            "step_1": {
+              "samples_total": 1,
+              "conf_count_over_valid": 1,
+              "conf_mean_over_valid": 0.7,
+              "conf_sources": {
+                "cand_conf_p_cond_pred": 1
+              }
+            },
+            "step_2": {
+              "samples_total": 1,
+              "conf_count_over_valid": 1,
+              "conf_mean_over_valid": 0.65,
+              "conf_sources": {
+                "cand_conf_p_cond_pred": 1
+              }
+            }
+          }
+        }
+      },
+      "step_0_acc": 0.0,
+      "step_0_conf": 0.6,
+      "step_1_acc": 1.0,
+      "step_1_conf": 0.7,
+      "step_2_acc": 1.0,
+      "step_2_conf": 0.65,
+      "multi_avg_acc": 0.6666666666666666,
+      "multi_avg_conf": 0.65
+    },
+    "sh_rtrv": {
+      "acc": 0.5,
+      "counts": {
+        "buckets": {
+          "all": {
+            "samples_total": 2,
+            "samples_valid": 2,
+            "samples_invalid": 0,
+            "correct": 1,
+            "accuracy_over_total": 0.5,
+            "accuracy_over_valid": 0.5
+          }
+        },
+        "all": {
+          "samples_total": 2,
+          "samples_valid": 2,
+          "samples_invalid": 0,
+          "correct": 1,
+          "accuracy_over_total": 0.5,
+          "accuracy_over_valid": 0.5
+        }
+      }
+    }
+  },
+  "warnings": []
+}

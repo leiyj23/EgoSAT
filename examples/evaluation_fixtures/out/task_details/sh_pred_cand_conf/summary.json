@@ -1,0 +1,36 @@
+{
+  "buckets": {
+    "predictable": {
+      "samples_total": 1,
+      "conf_count_over_valid": 1,
+      "conf_mean_over_valid": 0.8,
+      "conf_sources": {
+        "cand_conf_p_cond_pred": 1
+      }
+    },
+    "branch_only": {
+      "samples_total": 1,
+      "conf_count_over_valid": 1,
+      "conf_mean_over_valid": 0.4,
+      "conf_sources": {
+        "cand_conf_p_cond_pred": 1
+      }
+    },
+    "surprise_only": {
+      "samples_total": 1,
+      "conf_count_over_valid": 0,
+      "conf_mean_over_valid": null,
+      "conf_sources": {
+        "missing_prediction": 1
+      }
+    },
+    "branch_and_surprise": {
+      "samples_total": 1,
+      "conf_count_over_valid": 1,
+      "conf_mean_over_valid": 0.9,
+      "conf_sources": {
+        "cand_conf_p_cond_pred": 1
+      }
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "buckets": {
+    "all": {
+      "samples_total": 2,
+      "samples_valid": 2,
+      "samples_invalid": 0,
+      "correct": 1,
+      "accuracy_over_total": 0.5,
+      "accuracy_over_valid": 0.5
+    }
+  },
+  "all": {
+    "samples_total": 2,
+    "samples_valid": 2,
+    "samples_invalid": 0,
+    "correct": 1,
+    "accuracy_over_total": 0.5,
+    "accuracy_over_valid": 0.5
+  }
+}

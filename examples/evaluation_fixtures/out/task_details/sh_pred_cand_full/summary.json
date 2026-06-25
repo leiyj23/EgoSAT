@@ -1,0 +1,44 @@
+{
+  "buckets": {
+    "predictable": {
+      "samples_total": 1,
+      "samples_valid": 1,
+      "samples_invalid": 0,
+      "correct": 1,
+      "accuracy_over_total": 1.0,
+      "accuracy_over_valid": 1.0
+    },
+    "branch_only": {
+      "samples_total": 1,
+      "samples_valid": 1,
+      "samples_invalid": 0,
+      "correct": 0,
+      "accuracy_over_total": 0.0,
+      "accuracy_over_valid": 0.0
+    },
+    "surprise_only": {
+      "samples_total": 1,
+      "samples_valid": 0,
+      "samples_invalid": 1,
+      "correct": 0,
+      "accuracy_over_total": 0.0,
+      "accuracy_over_valid": null
+    },
+    "branch_and_surprise": {
+      "samples_total": 1,
+      "samples_valid": 1,
+      "samples_invalid": 0,
+      "correct": 1,
+      "accuracy_over_total": 1.0,
+      "accuracy_over_valid": 1.0
+    }
+  },
+  "all": {
+    "samples_total": 4,
+    "samples_valid": 3,
+    "samples_invalid": 1,
+    "correct": 2,
+    "accuracy_over_total": 0.5,
+    "accuracy_over_valid": 0.6666666666666666
+  }
+}

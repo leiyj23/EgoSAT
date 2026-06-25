@@ -1,0 +1,9 @@
+{
+  "task": "ms_pred",
+  "samples": [
+    {"idx": 0, "step_idx": 0, "lead_sec": 8, "mcq": {"answer": "A", "answer_idx": 0, "options": ["a", "b", "c", "d"]}},
+    {"idx": 1, "step_idx": 1, "lead_sec": 16, "mcq": {"answer": "B", "answer_idx": 1, "options": ["a", "b", "c", "d"]}},
+    {"idx": 2, "step_idx": 2, "lead_sec": 24, "mcq": {"answer": "C", "answer_idx": 2, "options": ["a", "b", "c", "d"]}}
+  ]
+}
+

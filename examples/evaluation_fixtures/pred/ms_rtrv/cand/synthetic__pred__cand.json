@@ -1,0 +1,9 @@
+{
+  "source_queryset": "examples/evaluation_fixtures/effective/ms_rtrv.json",
+  "samples": [
+    {"idx": 0, "response_text": "<PAST><ANS>D</ANS></PAST>", "clean_response": "<PAST><ANS>D</ANS></PAST>", "parsed": {"ans": "D"}},
+    {"idx": 1, "response_text": "<PAST><ANS>B</ANS></PAST>", "clean_response": "<PAST><ANS>B</ANS></PAST>", "parsed": {"ans": "B"}},
+    {"idx": 2, "response_text": "<PAST><ANS>C</ANS></PAST>", "clean_response": "<PAST><ANS>C</ANS></PAST>", "parsed": {"ans": "C"}}
+  ]
+}
+

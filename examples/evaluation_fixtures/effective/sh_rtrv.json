@@ -1,0 +1,8 @@
+{
+  "task": "sh_rtrv",
+  "samples": [
+    {"idx": 0, "mcq": {"answer": "A", "answer_idx": 0, "options": ["a", "b", "c", "d"]}},
+    {"idx": 1, "mcq": {"answer": "B", "answer_idx": 1, "options": ["a", "b", "c", "d"]}}
+  ]
+}
+

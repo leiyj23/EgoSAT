@@ -1,0 +1,8 @@
+{
+  "source_queryset": "examples/evaluation_fixtures/effective/ms_pred.json",
+  "samples": [
+    {"idx": 0, "response_text": "<FUTURE><ANS>A</ANS></FUTURE>", "clean_response": "<FUTURE><ANS>A</ANS></FUTURE>", "parsed": {"ans": "A"}},
+    {"idx": 1, "response_text": "<FUTURE><ANS>D</ANS></FUTURE>", "clean_response": "<FUTURE><ANS>D</ANS></FUTURE>", "parsed": {"ans": "D"}}
+  ]
+}
+

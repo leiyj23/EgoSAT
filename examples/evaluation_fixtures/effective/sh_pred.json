@@ -1,0 +1,10 @@
+{
+  "task": "sh_pred_full",
+  "samples": [
+    {"idx": 0, "state": "NN", "mcq": {"answer": "A", "answer_idx": 0, "options": ["a", "b", "c", "d"]}},
+    {"idx": 1, "state": "PN", "mcq": {"answer": "B", "answer_idx": 1, "options": ["a", "b", "c", "d"]}},
+    {"idx": 2, "state": "NP", "mcq": {"answer": "C", "answer_idx": 2, "options": ["a", "b", "c", "d"]}},
+    {"idx": 3, "state": "PP", "mcq": {"answer": "D", "answer_idx": 3, "options": ["a", "b", "c", "d"]}}
+  ]
+}
+

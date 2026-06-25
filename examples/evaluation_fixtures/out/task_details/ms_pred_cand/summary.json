@@ -1,0 +1,36 @@
+{
+  "buckets": {
+    "step_0": {
+      "samples_total": 1,
+      "samples_valid": 1,
+      "samples_invalid": 0,
+      "correct": 1,
+      "accuracy_over_total": 1.0,
+      "accuracy_over_valid": 1.0
+    },
+    "step_1": {
+      "samples_total": 1,
+      "samples_valid": 1,
+      "samples_invalid": 0,
+      "correct": 0,
+      "accuracy_over_total": 0.0,
+      "accuracy_over_valid": 0.0
+    },
+    "step_2": {
+      "samples_total": 1,
+      "samples_valid": 0,
+      "samples_invalid": 1,
+      "correct": 0,
+      "accuracy_over_total": 0.0,
+      "accuracy_over_valid": null
+    }
+  },
+  "all": {
+    "samples_total": 3,
+    "samples_valid": 2,
+    "samples_invalid": 1,
+    "correct": 1,
+    "accuracy_over_total": 0.3333333333333333,
+    "accuracy_over_valid": 0.5
+  }
+}

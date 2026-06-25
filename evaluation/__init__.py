@@ -1,0 +1,2 @@
+"""EgoSAT evaluation utilities."""
+

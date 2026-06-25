@@ -1,0 +1,39 @@
+model_variant: roi_timechat
+sft_task: mixed7_stateheavy
+base_model: wyccccc/TimeChatOnline-7B
+timechat_repo_root: /path/to/TimeChat-Online
+manifest: /path/to/egosat_sft/train_manifest_mixed7_stateheavy.sanitized.jsonl
+ego4d_root: /path/to/ego4d/full_scale
+roi_cache_root: /path/to/egosat_roi_cache
+output_dir: outputs/sft/roi_timechat_mixed7_stateheavy
+
+training:
+  epochs: 1
+  batch_size: 1
+  grad_accum: 8
+  learning_rate: 2.0e-4
+  weight_decay: 0.0
+  seed: 1234
+  max_frames: 16
+  save_every_steps: 500
+  log_every: 20
+
+lora:
+  r: 16
+  alpha: 32
+  dropout: 0.05
+  target_modules:
+    - q_proj
+    - k_proj
+    - v_proj
+    - o_proj
+    - gate_proj
+    - up_proj
+    - down_proj
+
+extra_trainable_patterns:
+  - mm_projector
+  - projector
+  - merger
+  - multi_modal_projector
+  - visual.merger

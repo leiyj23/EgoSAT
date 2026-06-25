@@ -1,0 +1,28 @@
+{
+  "buckets": {
+    "step_0": {
+      "samples_total": 1,
+      "conf_count_over_valid": 1,
+      "conf_mean_over_valid": 0.6,
+      "conf_sources": {
+        "cand_conf_p_cond_pred": 1
+      }
+    },
+    "step_1": {
+      "samples_total": 1,
+      "conf_count_over_valid": 1,
+      "conf_mean_over_valid": 0.7,
+      "conf_sources": {
+        "cand_conf_p_cond_pred": 1
+      }
+    },
+    "step_2": {
+      "samples_total": 1,
+      "conf_count_over_valid": 1,
+      "conf_mean_over_valid": 0.65,
+      "conf_sources": {
+        "cand_conf_p_cond_pred": 1
+      }
+    }
+  }
+}

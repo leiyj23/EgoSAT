@@ -1,0 +1,10 @@
+{
+  "source_queryset": "examples/evaluation_fixtures/effective/now_state_switch.json",
+  "samples": [
+    {"idx": 0, "response_text": "<NOW><STATE>INTERACTION</STATE></NOW>", "clean_response": "<NOW><STATE>INTERACTION</STATE></NOW>", "gen_tokens": ["<STATE>", "INTERACTION", "</STATE>"], "gen_token_probs": [0.99, 0.82, 0.99]},
+    {"idx": 1, "response_text": "<NOW><STATE>NO_INTERACTION</STATE></NOW>", "clean_response": "<NOW><STATE>NO_INTERACTION</STATE></NOW>", "gen_tokens": ["<STATE>", "NO_INTERACTION", "</STATE>"], "gen_token_probs": [0.99, 0.72, 0.99]},
+    {"idx": 2, "response_text": "<NOW><STATE>NO_INTERACTION</STATE></NOW>", "clean_response": "<NOW><STATE>NO_INTERACTION</STATE></NOW>", "gen_tokens": ["<STATE>", "NO_INTERACTION", "</STATE>"], "gen_token_probs": [0.99, 0.62, 0.99]},
+    {"idx": 3, "response_text": "<NOW><STATE>NO_INTERACTION</STATE></NOW>", "clean_response": "<NOW><STATE>NO_INTERACTION</STATE></NOW>", "gen_tokens": ["<STATE>", "NO_INTERACTION", "</STATE>"], "gen_token_probs": [0.99, 0.52, 0.99]}
+  ]
+}
+
